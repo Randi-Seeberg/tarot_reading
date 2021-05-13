@@ -1,4 +1,4 @@
-focus_areas = ["Relationships", "Career", "Personal development"]
+focus_areas=["Relationships", "Career", "Personal development"]
 
 def welcome():
     print("Welcome to Mme Nugget's tarot reading!")
