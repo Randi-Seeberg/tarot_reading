@@ -1,0 +1,1 @@
+print("Welcome to Mme Nugget's tarot reading!")
