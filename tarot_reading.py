@@ -1,4 +1,4 @@
-focus_areas={1:"Relationships", 2:"Career", 3:"Personal development"}
+from focus_areas import focus_areas, add_focus_area
 
 #Prints dict focus_areas [number:fa]
 def print_focus_areas():
@@ -16,6 +16,7 @@ def welcome():
     print("\nYour reading will focus on one of three important areas of your life: \n")
     print_focus_areas()
     choose_focus_area()
+
+
     
 
-print_focus_areas()
