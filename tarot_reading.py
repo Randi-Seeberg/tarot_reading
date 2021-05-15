@@ -32,7 +32,7 @@ def pick_random_card():
     print("\nNow, let me shuffle the cards for you.")
     print("\nThe cards are shuffled. I will now turn the top card of the deck for your reading.")
     random_card = random.choice(list(cards.items()))
-    print("\nYour card is: " + random_card[0] + "\n")
+    print("\nYour card is: " + random_card[0])
     return random_card
 
 def print_reading(question, card):
@@ -42,12 +42,13 @@ def print_reading(question, card):
 def try_again():
     retry = input("\nWould you like to try another reading? Please type 'y' for yes or 'n' for no: ")
     if retry == "y":
-        reading()
+        return reading()
     if retry == "n":
         return
     else:
-        print("\nThis is not a valid input. Please try again.")
-        try_again()
+        if retry != "y" and "n":
+            print("\nThis is not a valid input. Please try again.")
+            try_again()
 
 def reading():
     welcome()
@@ -57,8 +58,5 @@ def reading():
     try_again()
     goodbye()
 
-
-    
-
-try_again()
+reading()
 
