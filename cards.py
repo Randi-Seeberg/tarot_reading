@@ -1,2 +1,1 @@
-
-cards={"The Wheel of Fortune": ["text fa1", "text fa2", "text fa3"], "Justice": ["text fa1", "text fa2", "text fa3"]}
+cards={"The Wheel of Fortune": ["text q1", "text q2", "text q3"], "Justice": ["text q1", "text q2", "text q3"]}
